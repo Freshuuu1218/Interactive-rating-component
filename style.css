@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass';
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    background-color: hsl(215, 28%, 13%);
+    width: 30vw;
+    border-radius: 30px;
+    padding: 40px;   
+}
+.rating .star,
+.rating .circle{
+    background-color: hsl(213, 19%, 18%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(217, 12%, 63%);
+}
+.rating .content{
+    margin: 20px 0;
+}
+.rating .content h1,
+.thanks h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+.rating .content p,
+.thanks p{
+    color: hsl(217, 12%, 63%);
+}
+
+.rating .rate-container{
+    display: flex;
+    justify-content: space-between;
+}
+.rating button{
+    background-color: hsl(25, 97%, 53%);
+    border: 0;
+    border-radius: 50px;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: 1.1em;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.rating button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+.rating button:active{
+    transform: scale(.98);
+}
+
+.circle.clicked{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+.circle:hover{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+
+.thanks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rating-value{
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    padding: 10px;
+    width: auto;
+    margin: 20px auto;
+}
+
+.thanks p{
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: .3px;
+}
+
+.vanish{
+    display: none;
+}
+
+@media (max-width:400px){
+    .wrapper{
+        width: 90vw;
+    }
+.rating .circle {
+    width: 40px;
+    height: 40px;
+}
+}
